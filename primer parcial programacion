@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float aplicarDescuento (float numero,float descuento);
+float aplicarDescuento (float numero,float descuento)
+{
+
+
+	numero=numero-numero*(descuento/100);
+
+	return numero;
+}
+
+
+int main(void)
+{
+	setbuf(stdin,NULL);
+	float num=200;
+	float descuento=20;
+	float respuesta;
+	respuesta=aplicarDescuento(num,descuento);
+
+	printf("importe: %.2f \tporcentaje a descontar: %.2f\t importe con descuento: %.2f",num,descuento,respuesta);
+
+}
+
